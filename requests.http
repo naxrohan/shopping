@@ -1,0 +1,26 @@
+
+POST http://localhost:5000/api/auth/login/
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-Type: application/json
+
+{
+    "username" : "admin",
+    "password" : "ser123"
+}
+
+
+###
+POST http://localhost:5000/api/slides/
+content-type: application/json
+token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzEwODU4MiwiZXhwIjoxNjU3MzY3NzgyfQ.s-rqNWrilpKY2fEMr-OPW1QTpPj9Xl7-ctd1ZJgtOjA
+
+{
+            "id": 4,
+            "img": "https://images.pexels.com/photos/1099231/pexels-photo-1099231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "Promo Product 4 Title",
+            "shortDesc": "Promo Product 4 Description..here!!",
+            "bgColor": "a08099",
+            "ctaLink": "http://google.com",
+            "isActive": "true"
+        }
