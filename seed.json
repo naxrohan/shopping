@@ -1,0 +1,128 @@
+{
+    {
+        "title": "Venom Jeans",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1235692/pexels-photo-1235692.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "jeans",
+            "men"
+        ],
+        "size": ["XL", "L", "M"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Cooper Jeans",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "jeans",
+            "ladies"
+        ],
+        "size": ["XL", "L", "M"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Mens Casual T-Shirt",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "mens",
+            "shirts"
+        ],
+        "size": ["XL", "L", "M"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Nike Shoes",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1102776/pexels-photo-1102776.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "shoes",
+        ],
+        "size": ["8"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Ladies Pink Jacket",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "jackets",
+            "ladies"
+        ],
+        "size": ["XL", "L", "M"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "All Star Convers Shoes",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/3006002/pexels-photo-3006002.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "shoes"
+        ],
+        "size": ["8"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Nike Float Shoes",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1099231/pexels-photo-1099231.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "shoes"
+        ],
+        "size": ["8"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Puma Shoes Colourz",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/8871469/pexels-photo-8871469.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "shoes"
+        ],
+        "size": ["8"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Leather Sling bag",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "Bags",
+            "mens"
+        ],
+        "size": ["8"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+    {
+        "title": "Mens Formal Shirts",
+        "desc": "Latest Nike shoes , sports shoes, running shoes ",
+        "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&dpr=1",
+        "category": [
+            "shirts",
+            "mens"
+        ],
+        "size": ["XL", "L", "M"],
+        "color": ["white","Blue", "Black"],
+        "price": 15,
+        "inStock": true
+    },
+}
