@@ -21,22 +21,31 @@ mongoose.connect(
     console.log("Failed db connect..!!")
 });
 
-// enable CORS
+/* enable CORS */
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin","*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, token, User-Agent");
+    // res.header("Access-Control-Allow-Methods: GET, POST");
+    // res.header("Access-Control-Allow-Headers: X-Custom-Header");
     next();
 });
 
+
 app.use(express.json());
 app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/slides", slideRoute);
+app.use("/api/users", userRoute);
+app.use("/api/products", productRoute);
+
+// child folder static
+app.use(express.static(path.join(__dirname, "/ecomsite_client/build")));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/ecomsite_client/build', 'index.html'));
+});
 
 
-app.listen(process.env.SERVE_PORT || 5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log("backend server..runnning")
 });
