@@ -46,10 +46,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/ecomsite_client/build', 'index.html'));
 });
 
-// app.use(express.static(path.join(__dirname, "/ecomsite_admin/build")));
-// app.get('admin/*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/ecomsite_admin/build', 'index.html'));
-//   });
+app.use(express.static(path.join(__dirname, "/ecomsite_admin/build")));
+app.get('/admin/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/ecomsite_admin/build', 'index.html'));
+  });
 
 app.listen(process.env.PORT || 5000, () => {
     console.log("backend server..runnning")
