@@ -13,7 +13,7 @@ Content-Type: application/json
 ###
 POST http://localhost:5000/api/slides/
 content-type: application/json
-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzEwODU4MiwiZXhwIjoxNjU3MzY3NzgyfQ.s-rqNWrilpKY2fEMr-OPW1QTpPj9Xl7-ctd1ZJgtOjA
+token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzE5NTc1MywiZXhwIjoxNjU3NDU0OTUzfQ.qJXtStwiOKNhHU7LYLAQ4_rfwo3QaMrk1iYtUUmzel8
 
 {
             "id": 4,
@@ -24,3 +24,35 @@ token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2N
             "ctaLink": "http://google.com",
             "isActive": "true"
         }
+
+
+###
+GET http://localhost:5000/api/slides/
+content-type: application/json
+token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzEwODU4MiwiZXhwIjoxNjU3MzY3NzgyfQ.s-rqNWrilpKY2fEMr-OPW1QTpPj9Xl7-ctd1ZJgtOjA
+
+
+
+###
+GET http://localhost:5000/api/products/
+content-type: application/json
+token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzIxMzYxMiwiZXhwIjoxNjU3NDcyODEyfQ.fBcd4ffaembIC_VjyCq3tgYon-ylNnwd_qhz2SzGsPc
+
+
+
+###
+POST http://localhost:5000/api/products/
+content-type: application/json
+token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmY0ZTAzZGM0YmU2NWMzZjYxZmQzZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzQ1NzExMiwiZXhwIjoxNjU3NzE2MzEyfQ.dhsAIOjYvesSmxDwyWyFZKlhe4YZW0KyQm1RZpSqofA
+
+
+{
+    "title":"Dummy 4",
+    "price":"23",
+    "desc":"Dummy 1 description",
+    "inStock":"true",
+    "img":"https://firebasestorage.googleapis.com/v0/b/reactsite-a7c55.appspot.com/o/1657478067319products.png?alt=media&token=1baf22b3-ae6b-4481-9dc6-b7c49c643a73",
+    "cat":["asd", "asdsad"],
+    "size": ["XL", "L"],
+    "color": ["white","red", "green"]   
+}

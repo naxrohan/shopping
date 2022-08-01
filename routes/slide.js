@@ -44,10 +44,10 @@ router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
 // Get user 1 Slide by id.
 router.get("/find/:userId",verifyTokenAndAuthorize, async (req, res) => {
     try {
-        const Slide = await Slide.find({
+        const theSlide = await Slide.find({
             userId: req.params.userId
         });
-        res.status(200).json(Slide);
+        res.status(200).json(theSlide);
 
     } catch (error) {
         if(error) res.status(500).json(error);
@@ -55,10 +55,10 @@ router.get("/find/:userId",verifyTokenAndAuthorize, async (req, res) => {
 });
 
 // Get All Slide.
-router.get("/", verifyTokenAndAdmin,async (req, res) => {
+router.get("/", async (req, res) => {
     try {
-        const Slide = await Slide.find();
-        res.status(200).json(Slide);
+        const allSlide = await Slide.find();
+        res.status(200).json(allSlide);
     } catch (error) {
         if(error) res.status(500).json(error);
     }
