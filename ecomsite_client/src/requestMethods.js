@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL = "https://shopsite1.herokuapp.com/api/";
 
 const storeData = JSON.parse(localStorage.getItem("persist:root"));
-const currentUser = storeData !== null 
+const currentUser = storeData.user !== null 
     ? JSON.parse(storeData.user).currentUser
     : null;
 
