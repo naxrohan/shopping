@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
-import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
+import { userRequest } from '../requestMethods';
 import { mobile } from '../responsive';
 
 
@@ -81,9 +81,7 @@ const Slider = () => {
     useEffect(() => {
         const getSlides = async () => {
             try {
-                const res = await axios.get(
-                    `http://localhost:5000/api/slides/`
-                );
+                const res = await userRequest(`/slides/`);
                 setSliderItems(res.data);
             }catch (error) {
                 console.log(error)

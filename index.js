@@ -46,6 +46,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/ecomsite_client/build', 'index.html'));
 });
 
+//todo: 2nd folder needs testing
 app.use(express.static(path.join(__dirname, "/ecomsite_admin/build")));
 app.get('/admin/*', (req, res) => {
     res.sendFile(path.join(__dirname, '/ecomsite_admin/build', 'index.html'));
