@@ -77,7 +77,6 @@ const Login = () => {
     const location = useLocation();
     let pathParts = location.pathname.split("/");
     const logoutAction = pathParts.length === 2 ? pathParts[1] : "";
-        console.log(pathParts);
     if(logoutAction === "logout"){
         logout(dispatch);
     }
