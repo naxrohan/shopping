@@ -8,6 +8,7 @@ const productRoute = require("./routes/product");
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
 const slideRoute = require("./routes/slide");
+const path = require("path");
 
 
 dotenv.config();
