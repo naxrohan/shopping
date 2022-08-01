@@ -1,8 +1,13 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "https://shopsite1.herokuapp.com/api/";
 
-const B_TOKEN = ""//JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser === null ? "" : JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
+const storeData = JSON.parse(localStorage.getItem("persist:root"));
+const currentUser = storeData !== null 
+    ? JSON.parse(storeData.user).currentUser
+    : null;
+
+const B_TOKEN = currentUser !== null ? currentUser.accessToken : "xyz";
 
 
 export const publicRequest = axios.create({
